@@ -1,0 +1,243 @@
+https://code.visualstudio.com/ > Install
+https://nodejs.org/en > Install
+https://git-scm.com/downloads > Install
+https://github.com/ > Create Account
+https://github.com/Aakashdeveloper > Follow
+
+extension vscode
+
+> vscode icons
+> Gitlens
+> GitHistory
+> TabNine
+> SpellCheck
+
+extension in chorme
+
+> https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh
+
+FullStack Zomato app
+Template Forms
+Reactive Forms
+Login logout (jwt)
+Dummy api
+Deployment
+
+> Angular over node server
+> Angular over python server
+> Netlify(https://www.netlify.com/)
+> Github
+> Render.com
+> AWS
+> Jenkins
+> nginx
+> Docker
+> Github Actions
+> LazyLoading
+> Testing
+> Zomato+login logout
+> Payment
+> //////////////////////
+> Ang Material
+> Multilingual
+> Zomato + Google Login
+
+> > > > > > > > NO Covered<<<<<>>>>>
+> > > > > > > > HTML CSS JAVASCRIPT
+> > > > > > > > No Api Building (app,loginlogout)
+
+open source
+3,160,346
+
+/////////////
+JSON > JavaScript Object notation
+Way to represent the data
+key:Value
+Structred and unStructred
+
+[
+{
+"name":"John",
+"city":"Delhi",
+"Subject:"UI"
+},
+{
+"name":"Ankit",
+"city":"Paris"
+},
+{
+"name":"Nikita",
+"city":"London"
+}
+]
+
+//////////////////////
+Package.json
+
+> Name,version, description
+> Packages in the application
+> Script (Start,Build,Test)
+> Entry point
+
+//////Step to generate package.json
+\*\*NodeJs must be install in laptop
+
+> Open the cmd/terminal and go inside the folder
+> npm init
+> Answer all question
+> Type "yes"
+
+//////Step to install
+(local)
+
+> Open the cmd/terminal and go inside the folder
+> npm i packagename
+
+npm i packagename@4.3.2
+
+(Global)
+
+> Install in developer laptop
+> only need to generate the app/start app
+> will not add in package.json
+> Admin access to laptop
+
+- Window
+
+# open the cmd as admininstrtor
+
+# npm i -g packagename
+
+- Mac/Linuc
+  > open terminal
+  > sudo npm i -g packagename
+
+// Step to generate angular app
+
+- one time
+
+# open the cmd as admininstrtor
+
+# npm i -g @angular/cli
+
+- next all time you need new app
+  > open cmd
+  > go inside folder where you want app
+  > ng new appname
+
+//////Step to run the app
+
+# open the cmd go inside the app folder
+
+# npm start
+
+//file walkthrough
+Package.json> Main file and entry poitn
+package-lock.json > Dependency tree
+node_modules > save all the package
+Readme.md > Detail description and static file
+.gitignore> All this you want to avoid pushing to git
+.browserwelistrc > Make code compitable for browser(css & js);
+.editorconfig > Make code compitable for editor for multiple developer
+karma.conf > use to configure test cases
+tsconfig.json> Provide application which JS version to target and where build be made
+tsconfig.spec > test file of tsconfig
+angular.json >
+Main configurtation > first .ts file, all common css and js
+
+> > > > src
+> > > > app > all the dvelopment will happen here
+> > > > assets > all the images or static files
+> > > > environment.ts > configure env
+> > > > favicon > icon for browser
+> > > > index.html> Main html file for the application
+> > > > main.ts > first .ts specify the location main module
+> > > > polyfills > make compitable for IE/edge
+> > > > style.css > main(common) css file for the app
+> > > > test.ts> This file is required by karma.conf.js
+
+///////////////////
+Package.json > angular.json > Main.ts > app.module.ts > app.component.ts > index.html
+Browser > index.html
+
+https://blog.angular.io/
+
+///Angular building block
+
+> Modules
+
+# ngModule
+
+- Parent of the app
+- All the declaration will happen here
+
+> Component
+
+# component
+
+- HTML,css
+- Logics
+
+> Pipes
+
+# pipe & pipetransform
+
+- Run time data manipulation
+
+> Services(Injectable)
+
+# injeactble
+
+- To connect with external Agent
+- Dependency Injection
+
+> Routing
+
+# Ngmodule
+
+- To navigate between the pages
+
+DataBidning
+Pipe
+Service
+Routing
+
+DataBidning
+
+> > > One Way Data Binding
+
+- DataBinding {{}}
+- PropertyBinding []
+- Event Binding ()
+  > > > Two Way Data Binding [()]
+
+string = "" '' ``
+number = 11 55765 66.77 .88
+boolean = true/false
+
+Structural direactives
+
+> Help to modify the layout
+> *ngFor
+> *ngIf
+
+NgClass
+NgStyle
+NgSwitch
+
+var a = "amSTerDaM"
+undefined
+a.charAt(0)
+'a'
+a.charAt(0).toUpperCase()
+'A'
+a.slice(1)
+'mSTerDaM'
+a.slice(1).toLowerCase()
+'msterdam'
+a.charAt(0).toUpperCase()+a.slice(1).toLowerCase()
+'Amsterdam'
+var a = "pARis"
+undefined
+a.charAt(0).toUpperCase()+a.slice(1).toLowerCase()
+'Paris'
