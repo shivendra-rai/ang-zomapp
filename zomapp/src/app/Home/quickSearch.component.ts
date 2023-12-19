@@ -8,6 +8,8 @@ import { IMeal } from '../models/meal.model';
 })
 export class QuickSearchComponent {
   img1: string = '../../assets/images/drinks.png';
+  price: number = 221;
+  openedOn = Date.now();
   mealData: IMeal[] = [
     {
       _id: '6187761a62a1816f88593a4a',
