@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { ICity } from '../models/meal.model';
+import { ICity } from '../models/location.model';
+
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
@@ -8,6 +9,7 @@ import { ICity } from '../models/meal.model';
 export class SearchComponent {
   title: string = 'Find Best Place Near You';
   logo: string = 'M';
+  disabled: boolean = true;
   locationData: ICity[] = [
     {
       _id: '6187738a62a1816f8858634e',
@@ -42,4 +44,14 @@ export class SearchComponent {
       country_name: 'India',
     },
   ];
+
+  handleCity(event: Event) {
+    console.log((event.target as HTMLInputElement).value);
+    if ((event.target as HTMLInputElement).value !== 'default') {
+      this.disabled = false;
+      let stateId = Number((event.target as HTMLInputElement).value);
+    } else {
+      this.disabled = true;
+    }
+  }
 }
