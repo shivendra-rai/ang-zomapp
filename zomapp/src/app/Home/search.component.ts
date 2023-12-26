@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, OnChanges, SimpleChanges } from '@angular/core';
 import { ICity } from '../models/location.model';
 
 @Component({
@@ -6,7 +6,7 @@ import { ICity } from '../models/location.model';
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.css'],
 })
-export class SearchComponent {
+export class SearchComponent implements OnInit, OnChanges {
   title: string = 'Find Best Place Near You';
   logo: string = 'M';
   disabled: boolean = true;
@@ -44,6 +44,21 @@ export class SearchComponent {
       country_name: 'India',
     },
   ];
+
+  // any thing that need to declare
+  constructor() {
+    console.log('inside constructor');
+  }
+
+  // when the component will load
+  ngOnInit(): void {
+    console.log('inside constructor');
+  }
+
+  // trigger on event change
+  ngOnChanges(): void {
+    console.log('inside constructor');
+  }
 
   handleCity(event: Event) {
     console.log((event.target as HTMLInputElement).value);
