@@ -7,6 +7,7 @@ import { QuickSearchComponent } from './Home/quickSearch.component';
 import { SearchComponent } from './Home/search.component';
 import { FooterComponent } from './Footer/footer.component';
 import { MyUpperPipe } from './pipes/myupper.pipe';
+import { HomeService } from './services/Home.service';
 
 @NgModule({
   // all the components & pipe
@@ -24,7 +25,7 @@ import { MyUpperPipe } from './pipes/myupper.pipe';
   imports: [BrowserModule],
 
   // All the services
-  providers: [],
+  providers: [HomeService],
 
   // only and only main component
   bootstrap: [AppComponent],
